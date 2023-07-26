@@ -14,7 +14,8 @@ const db = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
     password: '',
-    database: 'huawie_notepad_project'
+    database: 'huawie_notepad_project',
+    port: '3306'
 });
 if (db.connect) {
     console.log('database connected!')
