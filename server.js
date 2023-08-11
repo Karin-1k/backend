@@ -11,21 +11,21 @@ app.use(express.urlencoded({ extended: true }));
 
 
 //!my local db 
-// const db = mysql.createConnection({
-//     host: '127.0.0.1',
-//     user: 'root',
-//     password: '',
-//     database: 'huawie_notepad_project',
-//     port: '3306'
-// });
-//! my online db 
 const db = mysql.createConnection({
-    host: 'bwqu4szqy3fgtyomhpkq-mysql.services.clever-cloud.com',
-    user: 'u4iit57pac1ltxfs',
-    password: 'Q8TB35hHcQdJ6zHl4y6e',
-    database: 'bwqu4szqy3fgtyomhpkq',
-    port: '3306',
+    host: '127.0.0.1',
+    user: 'root',
+    password: '',
+    database: 'huawie_notepad_project',
+    port: '3306'
 });
+//! my online db 
+// const db = mysql.createConnection({
+//     host: 'bwqu4szqy3fgtyomhpkq-mysql.services.clever-cloud.com',
+//     user: 'u4iit57pac1ltxfs',
+//     password: 'Q8TB35hHcQdJ6zHl4y6e',
+//     database: 'bwqu4szqy3fgtyomhpkq',
+//     port: '3306',
+// });
 if (db.connect) {
     console.log('database connected!')
 } else {
