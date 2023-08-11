@@ -128,6 +128,7 @@ app.delete('/api/delete', (req, res) => {
 
 const server = app.listen(5000, () => {
     console.log('server created!');
+     console.log(server.port);
     io = socketio(server)
 
     io.on('connection', socket => {
